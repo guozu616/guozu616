@@ -101,7 +101,7 @@ function reinstall(){
 
 function printMsg(){
 	echoColor yellowBlack "配置文件输出如下且已经在本目录生成(可自行复制粘贴到本地)"
-	echoColor green "\n\nTips:客户端默认只开启http(8888)、socks5(8889)代理!其他方式请参照文档自行修改客户端config.json"
+	echoColor green "\n\nTips:客户端默认只开启http(8888)、socks5(8887)代理!其他方式请参照文档自行修改客户端config.json"
 	echoColor purple "***********************************↓↓↓copy↓↓↓*******************************↓"
 	cat ./config.json
 	echoColor purple "↑***********************************↑↑↑copy↑↑↑*******************************↑\n"
@@ -401,7 +401,7 @@ cat <<EOF > config.json
 "disable_udp": false
 },
 "socks5": {
-"listen": "127.0.0.1:8889",
+"listen": "127.0.0.1:8887",
 "timeout": 300,
 "disable_udp": false
 },
@@ -465,7 +465,7 @@ EOF
 "disable_udp": false
 },
 "socks5": {
-"listen": "127.0.0.1:8889",
+"listen": "127.0.0.1:8887",
 "timeout": 300,
 "disable_udp": false
 },
